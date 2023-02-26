@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #1f1e1e;
+}
+
+.wrapper {
+	margin: 80px;
+	text-align: center;
+}
+
+.square {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	animation: dancefloor 2s linear infinite;
+	animation-direction: alternate;
+}
+
+.square:nth-child(2n) {
+	animation: dancefloor 1.5s linear infinite;
+}
+
+@keyframes dancefloor {
+	10% {
+		background-color: #07079d;
+		opacity: 1;
+	}
+
+	50% {
+		background-color: #de1f7e;
+		opacity: 0.2;
+	}
+
+	90% {
+		background-color: #ee850e;
+		opacity: 0.8;
+	}
+}
